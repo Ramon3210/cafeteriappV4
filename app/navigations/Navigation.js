@@ -14,10 +14,11 @@ export default function Navigation() {
   return (
     <NavigationContainer>
       <Tab.Navigator
-        initialRouteName="restaurants"
+        initialRouteName="clientes"
         tabBarOptions={{
           inactiveTintColor: "#646464",
           activeTintColor: "#00a680"
+      //  activeTintColor: "#4B413F"
         }}
         screenOptions={({ route }) => ({
           tabBarIcon: ({ color }) => screenOptions(route, color)
@@ -74,6 +75,7 @@ function screenOptions(route, color) {
     default:
       break;
   }
+
   return (
     <Icon type="material-community" name={iconName} size={22} color={color} />
   );
