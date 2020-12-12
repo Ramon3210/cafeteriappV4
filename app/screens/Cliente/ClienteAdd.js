@@ -1,23 +1,28 @@
 import React, { useState } from "react";
-import { View, Text, ScrollView } from "react-native";
-
+import { StyleSheet, View, Text, ScrollView } from "react-native";
+import { Button, ListItem, Icon } from "react-native-elements";
 import { FloatingLabelInput , globalStyles } from 'react-native-floating-label-input';
+import { useNavigation } from "@react-navigation/native";
 
 
 
-import Icon from 'react-native-vector-icons/FontAwesome';
 import { Input } from 'react-native-elements';
 
 export default function ClienteAdd() {
   const [idCliente, setIdCliente] = useState('');  
 
-  //const [nick, setNick] = useState('');
+  const [nick, setNick] = useState('');
 
+  const navigation = useNavigation();
 
   return (
-     <View style={{padding: 50, flex: 1, backgroundColor: '#fff'}}>
+    <ScrollView centerContent={true} style={styles.viewBody}>
+    <Text style={styles.textTitle}>Clientes</Text>
+
+
+     <View style={{padding: 10, flex: 1, backgroundColor: '#fff'}}>
        {/* <Text>Identificador del cliente:</Text> */}
-       <FloatingLabelInput
+       {/* <FloatingLabelInput
         label="Identificador del cliente"
         value={idCliente}
         staticLabel
@@ -42,30 +47,59 @@ export default function ClienteAdd() {
           paddingHorizontal: 10,
         }}
         onChangeText={value => setIdCliente(value)}
-      />
+      /> */}
+
+ {/* <Input
+  placeholder='IDENTIFICADOR'
+/> */}
+
 
 {/* <Input
-  placeholder='BASIC INPUT'
-/>
-
-<Input
-  placeholder='INPUT WITH ICON'
+  placeholder='IDENTIFICADOR'
   leftIcon={{ type: 'font-awesome', name: 'chevron-left' }}
-/>
+/> */}
 
 <Input
-  placeholder='INPUT WITH CUSTOM ICON'
-  leftIcon={
-    <Icon
-      name='user'
-      size={24}
-      color='black'
-    />
-  }
+  placeholder='IDENTIFICADOR'
+  // leftIcon={
+  //   <Icon
+  //     name='user'
+  //     size={24}
+  //     color='black'
+  ///>
+  //}
 />
-
 
   <Input
+  placeholder='NOMBRE'
+/> 
+
+<Input
+  placeholder='EDAD'
+/> 
+
+<Input
+  placeholder='TIPO DE CLIENTE'
+/> 
+
+<Input
+  placeholder='ACOMPAÑANTES'
+/> 
+
+<Input
+  placeholder='MENORES DE EDAD'
+/> 
+
+<View style={styles.viewBtn}>
+      <Button
+        title="Guardar"
+        buttonStyle={styles.btnStyle}
+        containerStyle={styles.btnContainer}
+        onPress={() => navigation.navigate("clientes")}
+      />
+    </View>
+
+  {/* <Input
    placeholder="Comment"
    leftIcon={{ type: 'font-awesome', name: 'comment' }}
    style={{padding: 5, flex: 1, backgroundColor: '#fff'}}
@@ -88,12 +122,41 @@ export default function ClienteAdd() {
         // currencyDivider="." // which generates: 9.999.999,99 or 0,99 ...
         keyboardType="text"
         onChangeText={value => setNick(value)}
-/> */}
+/>  */}
 
 
      </View>
+     </ScrollView>
   );
 }
+
+const styles = StyleSheet.create({
+  viewBody: {
+    marginLeft: 30,
+    marginRight: 30
+  },
+  textTitle: {
+    marginTop: 20,
+    marginBottom: 20,
+    textAlign: "center",
+    fontSize: 30,
+    fontWeight: "bold"
+  },
+  btnAddMaestro: {
+    marginBottom: 5
+  },
+  btnStyle: {
+    backgroundColor: "#4B413F"
+  },
+  btnContainer: {
+    width: "70%"
+  },
+  viewBtn: {
+    flex: 6,
+    alignItems: "center",
+    marginBottom:30
+  }
+});
 
 
 

@@ -5,7 +5,7 @@ export default function ClienteInfo() {
 
   return (
     <View >
-      <Text >DETALLE CLIENTES</Text>
+      <Text >DETALLE DE LOS CLIENTES</Text>
     </View>
   );
 }

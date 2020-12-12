@@ -2150,6 +2150,41 @@ babel-preset-react-native@^1.5.6:
     babel-plugin-transform-regenerator "^6.5.0"
     react-transform-hmr "^1.0.4"
 
+babel-preset-react-native@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/babel-preset-react-native/-/babel-preset-react-native-2.1.0.tgz#9013ebd82da1c88102bf588810ff59e209ca2b8a"
+  integrity sha1-kBPr2C2hyIECv1iIEP9Z4gnKK4o=
+  dependencies:
+    babel-plugin-check-es2015-constants "^6.5.0"
+    babel-plugin-react-transform "2.0.2"
+    babel-plugin-syntax-async-functions "^6.5.0"
+    babel-plugin-syntax-class-properties "^6.5.0"
+    babel-plugin-syntax-flow "^6.5.0"
+    babel-plugin-syntax-jsx "^6.5.0"
+    babel-plugin-syntax-trailing-function-commas "^6.5.0"
+    babel-plugin-transform-class-properties "^6.5.0"
+    babel-plugin-transform-es2015-arrow-functions "^6.5.0"
+    babel-plugin-transform-es2015-block-scoping "^6.5.0"
+    babel-plugin-transform-es2015-classes "^6.5.0"
+    babel-plugin-transform-es2015-computed-properties "^6.5.0"
+    babel-plugin-transform-es2015-destructuring "^6.5.0"
+    babel-plugin-transform-es2015-for-of "^6.5.0"
+    babel-plugin-transform-es2015-function-name "^6.5.0"
+    babel-plugin-transform-es2015-literals "^6.5.0"
+    babel-plugin-transform-es2015-modules-commonjs "^6.5.0"
+    babel-plugin-transform-es2015-parameters "^6.5.0"
+    babel-plugin-transform-es2015-shorthand-properties "^6.5.0"
+    babel-plugin-transform-es2015-spread "^6.5.0"
+    babel-plugin-transform-es2015-template-literals "^6.5.0"
+    babel-plugin-transform-flow-strip-types "^6.5.0"
+    babel-plugin-transform-object-assign "^6.5.0"
+    babel-plugin-transform-object-rest-spread "^6.5.0"
+    babel-plugin-transform-react-display-name "^6.5.0"
+    babel-plugin-transform-react-jsx "^6.5.0"
+    babel-plugin-transform-react-jsx-source "^6.5.0"
+    babel-plugin-transform-regenerator "^6.5.0"
+    react-transform-hmr "^1.0.4"
+
 babel-runtime@^6.18.0, babel-runtime@^6.2.0, babel-runtime@^6.22.0, babel-runtime@^6.26.0:
   version "6.26.0"
   resolved "https://registry.yarnpkg.com/babel-runtime/-/babel-runtime-6.26.0.tgz#965c7058668e82b55d7bfe04ff2337bc8b5647fe"
@@ -5288,10 +5323,10 @@ react-native-elements@^3.0.0-alpha.1:
     react-native-size-matters "^0.3.1"
     react-native-status-bar-height "^2.5.0"
 
-react-native-floating-label-input@^1.2.13:
-  version "1.2.13"
-  resolved "https://registry.yarnpkg.com/react-native-floating-label-input/-/react-native-floating-label-input-1.2.13.tgz#c064d5fa8daa9b06f471b4a68c45e472ae7c749a"
-  integrity sha512-2Agru8m+gV3B6jZ+pHErS/AIIIiU3KzvASsgrY3Lhey0CdFj51+i8m3VdJGaQSPDezFoZIjYR9NwZOFQe3lnZQ==
+react-native-floating-label-input@^1.2.15:
+  version "1.2.15"
+  resolved "https://registry.yarnpkg.com/react-native-floating-label-input/-/react-native-floating-label-input-1.2.15.tgz#69159cce8def54f3bc16465d420539034987c901"
+  integrity sha512-wjpPfQtxhfT9Ttby/2aA/wvygyDix1zVmUkD/W3VloDONZsohxFW134ySxKOlrlmp3fhsZ3WlrRzVGT1jQnyDg==
 
 react-native-gesture-handler@~1.7.0:
   version "1.7.0"
