@@ -29,21 +29,21 @@ export default function Pago() {
 
       <View style={styles.viewBtn}>
         <Button
-          title="Eliminar pago"
+          title="Gestionar pago"
           buttonStyle={styles.btnStyle}
           containerStyle={styles.btnContainer}
           onPress={() => navigation.navigate("pagos-del")}
         />
       </View>
 
-      <View style={styles.viewBtn}>
+      {/* <View style={styles.viewBtn}>
         <Button
           title="Modificar pago"
           buttonStyle={styles.btnStyle}
           containerStyle={styles.btnContainer}
           onPress={() => navigation.navigate("pagos-upd")}
         />
-      </View>
+      </View> */}
 
       {list.map((item, i) => (
         <ListItem key={i} bottomDivider>

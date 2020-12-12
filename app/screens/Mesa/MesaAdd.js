@@ -16,7 +16,7 @@ export default function MesaAdd() {
 
 <Input placeholder='CANTIDAD DE SILLAS'/> 
 
-<Input placeholder='UBICACIÓ'/> 
+<Input placeholder='UBICACIÓN'/> 
 
 <View style={styles.viewBtn}>
       <Button

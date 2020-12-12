@@ -29,21 +29,21 @@ export default function Mesa() {
 
       <View style={styles.viewBtn}>
         <Button
-          title="Borrar mesa"
+          title="Gestionar mesa"
           buttonStyle={styles.btnStyle}
           containerStyle={styles.btnContainer}
           onPress={() => navigation.navigate("mesas-del")}
         />
       </View>
 
-      <View style={styles.viewBtn}>
+      {/* <View style={styles.viewBtn}>
         <Button
           title="Actualizar mesa"
           buttonStyle={styles.btnStyle}
           containerStyle={styles.btnContainer}
           onPress={() => navigation.navigate("mesas-upd")}
         />
-      </View>
+      </View> */}
 
       {list.map((item, i) => (
         <ListItem key={i} bottomDivider>

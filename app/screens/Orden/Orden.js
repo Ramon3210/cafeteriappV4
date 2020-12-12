@@ -29,21 +29,21 @@ export default function Orden() {
 
       <View style={styles.viewBtn}>
         <Button
-          title="Borrar orden"
+          title="Gestionar orden"
           buttonStyle={styles.btnStyle}
           containerStyle={styles.btnContainer}
           onPress={() => navigation.navigate("ordenes-del")}
         />
       </View>
 
-      <View style={styles.viewBtn}>
+      {/* <View style={styles.viewBtn}>
         <Button
           title="Actualizar orden"
           buttonStyle={styles.btnStyle}
           containerStyle={styles.btnContainer}
           onPress={() => navigation.navigate("ordenes-upd")}
         />
-      </View>
+      </View> */}
 
       {list.map((item, i) => (
         <ListItem key={i} bottomDivider>

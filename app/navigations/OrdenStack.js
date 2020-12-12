@@ -32,7 +32,7 @@ export default function OrdenesStack() {
       <Stack.Screen
         name="ordenes-del"
         component={OrdenDel}
-        options={{ title: "BORRAR ORDEN" }}
+        options={{ title: "ORDEN" }}
       />
 
       <Stack.Screen

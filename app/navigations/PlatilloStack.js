@@ -32,7 +32,7 @@ export default function PlatilloStack() {
       <Stack.Screen
         name="platillos-del"
         component={PlatilloDel}
-        options={{ title: "BORRAR PLATILLO" }}
+        options={{ title: "PLATILLO" }}
       />
 
       <Stack.Screen

@@ -5,7 +5,7 @@ export default function MesaDel() {
 
   return (
     <View >
-      <Text>ELIMINAR MESA</Text>
+      <Text>GESTIÓN DE MESA</Text>
     </View>
   );
 }

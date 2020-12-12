@@ -29,21 +29,21 @@ export default function Cliente() {
 
       <View style={styles.viewBtn}>
         <Button
-          title="Eliminar cliente"
+          title="Gestionar cliente"
           buttonStyle={styles.btnStyle}
           containerStyle={styles.btnContainer}
           onPress={() => navigation.navigate("clientes-del")}
         />
       </View>
 
-      <View style={styles.viewBtn}>
+      {/* <View style={styles.viewBtn}>
         <Button
           title="Actualizar cliente"
           buttonStyle={styles.btnStyle}
           containerStyle={styles.btnContainer}
           onPress={() => navigation.navigate("clientes-upd")}
         />
-      </View>
+      </View> */}
 
       {list.map((item, i) => (
         <ListItem key={i} bottomDivider>

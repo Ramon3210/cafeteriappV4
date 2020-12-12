@@ -5,7 +5,7 @@ export default function ClienteDel() {
 
   return (
     <View >
-      <Text >BORRAR CLIENTE</Text>
+      <Text >GESTIONAR CLIENTE</Text>
     </View>
   );
 }

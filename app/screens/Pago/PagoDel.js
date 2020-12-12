@@ -5,7 +5,7 @@ export default function PagoDel() {
 
   return (
     <View >
-      <Text>BORRAR PAGO</Text>
+      <Text>GESTIÓN DEL PAGO</Text>
     </View>
   );
 }

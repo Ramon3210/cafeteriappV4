@@ -5,7 +5,7 @@ export default function OrdenDel() {
 
   return (
     <View >
-      <Text>BORRAR ORDEN</Text>
+      <Text>GESTIÓN DE ORDEN</Text>
     </View>
   );
 }

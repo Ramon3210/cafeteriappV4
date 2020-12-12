@@ -5,7 +5,7 @@ export default function PlatilloDel() {
 
   return (
     <View >
-      <Text>BORRAR PLATILLO</Text>
+      <Text>GESTIÓN DE PLATILLO</Text>
     </View>
   );
 }

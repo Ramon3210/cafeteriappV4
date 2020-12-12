@@ -29,21 +29,21 @@ export default function Platillo() {
 
       <View style={styles.viewBtn}>
         <Button
-          title="Borrar platillo"
+          title="Gestionar platillo"
           buttonStyle={styles.btnStyle}
           containerStyle={styles.btnContainer}
           onPress={() => navigation.navigate("platillos-del")}
         />
       </View>
 
-      <View style={styles.viewBtn}>
+      {/* <View style={styles.viewBtn}>
         <Button
           title="Actualizar platillos"
           buttonStyle={styles.btnStyle}
           containerStyle={styles.btnContainer}
           onPress={() => navigation.navigate("platillos-upd")}
         />
-      </View>
+      </View> */}
 
       {list.map((item, i) => (
         <ListItem key={i} bottomDivider>

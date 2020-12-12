@@ -32,7 +32,7 @@ export default function ClientesStack() {
       <Stack.Screen
         name="clientes-del"
         component={ClienteDel}
-        options={{ title: "BORRAR CLIENTE" }}
+        options={{ title: "CLIENTE" }}
       />
 
       <Stack.Screen

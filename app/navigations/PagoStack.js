@@ -32,7 +32,7 @@ export default function PagosStack() {
       <Stack.Screen
         name="pagos-del"
         component={PagoDel}
-        options={{ title: "BORRAR PAGO" }}
+        options={{ title: "PAGO" }}
       />
 
       <Stack.Screen
