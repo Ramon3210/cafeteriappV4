@@ -1,18 +1,25 @@
-import React from "react";
-import { StyleSheet, View, Text, ScrollView } from "react-native";
+import React, { useState } from "react";
+import { StyleSheet, View, Text, TextInput, ScrollView } from "react-native";
 import { Button, ListItem, Icon } from "react-native-elements";
 import { useNavigation } from "@react-navigation/native";
 import { Input } from 'react-native-elements';
 
 export default function MesaAdd() {
   const navigation = useNavigation();
+  const [txtNumMesa, setNumMesa] = useState('Escribe el número de mesa ...');
+
   return (
     <ScrollView centerContent={true} style={styles.viewBody}>
     <Text style={styles.textTitle}>Mesas</Text>
 
      <View style={{padding: 10, flex: 1, backgroundColor: '#fff'}}>
 
-<Input placeholder='NÚMERO DE MESA'/>
+                <Text>Número de mesa</Text>
+                <TextInput
+                    style={styles.input}
+                    placeholder={txtNumMesa}
+                    onChangeText={n => setNumMesa(n)}
+                />
 
 <Input placeholder='CANTIDAD DE SILLAS'/> 
 
@@ -26,6 +33,10 @@ export default function MesaAdd() {
         onPress={() => navigation.navigate("mesas")}
       />
     </View>
+
+                <Text style={styles.textTitle}>DATOS DE LA MESA</Text>
+                <Text>NÚMERO: {txtNumMesa}</Text>
+
      </View>
      </ScrollView>
   );

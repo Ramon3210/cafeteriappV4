@@ -1,5 +1,5 @@
 import React from "react";
-import { StyleSheet, View, Text, ScrollView } from "react-native";
+import { Image, StyleSheet, View, Text, ScrollView } from "react-native";
 import { Button, ListItem, Icon } from "react-native-elements";
 import { useNavigation } from "@react-navigation/native";
 
@@ -10,6 +10,16 @@ export default function Mesa() {
       <Text style={styles.textTitle}>Mesas</Text>
 
       <View style={styles.viewBtn}>
+
+      {/* source={require('./../../../assets/alumnos1.png')} */}
+      {/* source={{ uri: 'https://picsum.photos/200/300' }} */}
+      {/* source={{ uri: 'https://source.unsplash.com/daily' }} */}
+
+      <Image
+        style={styles.photo}
+        source={{ uri: 'https://source.unsplash.com/featured/?{coffeetable}' }}
+      />
+
         <Button
           title="Agregar mesa"
           buttonStyle={styles.btnStyle}
@@ -83,6 +93,12 @@ const styles = StyleSheet.create({
     flex: 6,
     alignItems: "center",
     marginBottom:30
+  },
+  photo: {
+    height: 140,
+    width: 340,
+    marginBottom: 5,
+    marginTop: 5
   }
 });
 

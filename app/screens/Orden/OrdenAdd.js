@@ -8,11 +8,11 @@ export default function OrdenAdd() {
   const navigation = useNavigation();
   return (
     <ScrollView centerContent={true} style={styles.viewBody}>
-    <Text style={styles.textTitle}>Mesas</Text>
+    <Text style={styles.textTitle}>Órdenes</Text>
 
      <View style={{padding: 10, flex: 1, backgroundColor: '#fff'}}>
 
-<Input placeholder='NÚMERO DE ORDEN'/>
+<Input placeholder='NÚMERO DE ÓRDEN'/>
 
 <Input placeholder='FECHA'/> 
 
