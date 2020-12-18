@@ -1,5 +1,5 @@
 import React from "react";
-import { StyleSheet, View, Text, ScrollView } from "react-native";
+import { Image, StyleSheet, View, Text, ScrollView } from "react-native";
 import { Button, ListItem, Icon } from "react-native-elements";
 import { useNavigation } from "@react-navigation/native";
 
@@ -10,6 +10,12 @@ export default function Pago() {
       <Text style={styles.textTitle}>Pagos</Text>
 
       <View style={styles.viewBtn}>
+
+      <Image
+        style={styles.photo}
+        source={{ uri: 'https://source.unsplash.com/featured/?{creditcard}' }}
+      />
+
         <Button
           title="Agregar pago"
           buttonStyle={styles.btnStyle}
@@ -35,15 +41,6 @@ export default function Pago() {
           onPress={() => navigation.navigate("pagos-del")}
         />
       </View>
-
-      {/* <View style={styles.viewBtn}>
-        <Button
-          title="Modificar pago"
-          buttonStyle={styles.btnStyle}
-          containerStyle={styles.btnContainer}
-          onPress={() => navigation.navigate("pagos-upd")}
-        />
-      </View> */}
 
       {list.map((item, i) => (
         <ListItem key={i} bottomDivider>
@@ -83,6 +80,12 @@ const styles = StyleSheet.create({
     flex: 6,
     alignItems: "center",
     marginBottom:30
+  },
+  photo: {
+    height: 140,
+    width: 340,
+    marginBottom: 5,
+    marginTop: 5
   }
 });
 

@@ -1,10 +1,10 @@
 import React from "react";
 import { createStackNavigator } from "@react-navigation/stack";
-import Cliente from "../screens/Cliente/Cliente";
-import ClienteAdd from "../screens/Cliente/ClienteAdd";
-import ClienteInfo from "../screens/Cliente/ClienteInfo";
-import ClienteDel from "../screens/Cliente/ClienteDel";
-import ClienteUpd from "../screens/Cliente/ClienteUpd";
+import Cliente from "../navigations/../screens/Cliente/Cliente";
+import ClienteAdd from "../../components//clienteAdd/ClienteAdd";
+import ClienteInfo from "../../components/ClienteInfo";
+import ClienteDel from "../../components/ClienteDel";
+import ClienteUpd from "../../components/ClienteUpd";
 
 const Stack = createStackNavigator();
 

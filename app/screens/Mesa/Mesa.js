@@ -11,14 +11,15 @@ export default function Mesa() {
 
       <View style={styles.viewBtn}>
 
-      {/* source={require('./../../../assets/alumnos1.png')} */}
+       {/* source={require('../../../assets/splash.png')} */}
       {/* source={{ uri: 'https://picsum.photos/200/300' }} */}
       {/* source={{ uri: 'https://source.unsplash.com/daily' }} */}
+
 
       <Image
         style={styles.photo}
         source={{ uri: 'https://source.unsplash.com/featured/?{coffeetable}' }}
-      />
+      /> 
 
         <Button
           title="Agregar mesa"

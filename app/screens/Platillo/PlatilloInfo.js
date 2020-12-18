@@ -1,11 +1,82 @@
+// import React from "react";
+// import { View, Text, ScrollView } from "react-native";
+
+// export default function PlatilloInfo() {
+
+//   return (
+//     <View >
+//       <Text >DETALLE PLATILLOS</Text>
+//     </View>
+//   );
+// }
+
 import React from "react";
-import { View, Text, ScrollView } from "react-native";
+import {
+  StyleSheet,
+  Text,
+  View,
+  SafeAreaView,
+  SectionList
+} from "react-native";
+import Constants from "expo-constants";
 
-export default function PlatilloInfo() {
+const DATA = [
+  {
+    title: "Main dishes",
+    data: ["Pizza", "Burger", "Risotto"]
+  },
+  {
+    title: "Sides",
+    data: ["French Fries", "Onion Rings", "Fried Shrimps"]
+  },
+  {
+    title: "Drinks",
+    data: ["Water", "Coke", "Beer"]
+  },
+  {
+    title: "Desserts",
+    data: ["Cheese Cake", "Ice Cream"]
+  }
+];
 
-  return (
-    <View >
-      <Text >DETALLE PLATILLOS</Text>
-    </View>
-  );
-}
+const Item = ({ title }) => (
+  <View style={styles.item}>
+    <Text style={styles.title}>{title}</Text>
+  </View>
+);
+
+ export default function PlatilloInfo() {
+
+   return (
+  <SafeAreaView style={styles.container}>
+    <SectionList
+      sections={DATA}
+      keyExtractor={(item, index) => item + index}
+      renderItem={({ item }) => <Item title={item} />}
+      renderSectionHeader={({ section: { title } }) => (
+        <Text style={styles.header}>{title}</Text>
+      )}
+    />
+  </SafeAreaView>
+);
+      }
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    marginTop: Constants.statusBarHeight,
+    marginHorizontal: 16
+  },
+  item: {
+    backgroundColor: "#4B413F",
+    padding: 20,
+    marginVertical: 8
+  },
+  header: {
+    fontSize: 32,
+    backgroundColor: "#fff"
+  },
+  title: {
+    fontSize: 24
+  }
+});

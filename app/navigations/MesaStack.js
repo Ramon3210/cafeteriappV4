@@ -42,8 +42,5 @@ export default function ClientesStack() {
       />
 
     </Stack.Navigator>
-
-
-
   );
 }
